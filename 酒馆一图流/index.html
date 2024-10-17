@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Popup</title>
+    <!-- 引入Google热门字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>酒馆战棋一图流</h2>
+    <!-- 目录部分，可以修改目录名称和图片路径 -->
+    <ul id="directory">
+        <!-- 这里的 "Image 1" 是目录名称，"img1.jpg" 是对应的图片路径 -->
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\1.机械法术鸡杂（C）.webp">1.机械法术鸡杂（C）</li>
+        <!-- 这里的 "Image 2" 是目录名称，"img2.jpg" 是对应的图片路径 -->
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\2.星元自动机械（B）.webp">2.星元自动机械（B）</li>
+        <!-- 这里的 "Image 3" 是目录名称，"img3.jpg" 是对应的图片路径 -->
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\3.B-BOX磁力（S）.webp">3.B-BOX磁力（S）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\4.鱼人磁力机械（S+）.webp">4.鱼人磁力机械（S+）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\5.手牌鱼人（A）.webp">5.手牌鱼人（A）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\6.下毒鱼人（B）.webp">6.下毒鱼人（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\7.自动鱼人（B）.webp">7.自动鱼人（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\8.鱼人猪（S）.webp">8.鱼人猪（S）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\9.亡语猪（B）.webp">9.亡语猪（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\10.走地野猪（B）.webp">10.走地野猪（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\11.手动海盗猪（A）.webp">11.手动海盗猪（A）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\12.海盗倒转（B）.webp">12.海盗倒转（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\13.海盗跳操（B）.webp">13.海盗跳操（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\14.海盗龙跳操（A）.webp">14.海盗龙跳操（A）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\15.战斗加成龙（B）.webp">15.战斗加成龙（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\16.大威天龙（B）.webp">16.大威天龙（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\17.乌祖尔恶魔（A）.webp">17.乌祖尔恶魔（A）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\18.魔蝠吞酒馆（B）.webp">18.魔蝠吞酒馆（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\19.野兽鹉大狼（B）.webp">19.野兽鹉大狼（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\20.激怒野兽（C）.webp">20.激怒野兽（C）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\21.加攻亡灵（B）.webp">21.加攻亡灵（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\22.放不下亡灵（A）.webp">22.放不下亡灵（A）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\23.元素法诺（C）.webp">23.元素法诺（C）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\24.元素倒转（C）.webp">24.元素倒转（C）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\25.蓝调娜迦（B）.webp">25.蓝调娜迦（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\26.主母娜迦（C）.webp">26.主母娜迦（C）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\27.弃牌娜迦猪（B）.webp">27.弃牌娜迦猪（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\28.混合喝茶（B）.webp">28.混合喝茶（B）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\29.混合光牙（C）.webp">29.混合光牙（C）</li>
+        <li data-img="E:\360MoveData\Users\Administrator\Desktop\炉石\10.11\30.中立三倍（B）.webp">30.中立三倍（B）</li>
+    </ul>
+   </div>
+
+    <!-- 弹窗显示部分 -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+        <span class="close-image">&times;</span> <!-- 关闭图片按钮 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
