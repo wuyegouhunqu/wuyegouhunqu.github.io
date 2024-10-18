@@ -1,0 +1,138 @@
+/* 使用自定义字体 */
+@font-face {
+    font-family: "FZ ZhunYuan"; /* 方正准圆 */
+    src: url('FZZhunYuan.ttf'); /* 确保此字体文件已经加载 */
+}
+
+@font-face {
+    font-family: "FangSong Bold"; /* 仿宋加粗 */
+    src: url('FangSongBold.ttf'); /* 确保此字体文件已经加载 */
+}
+
+/* 设置页面背景和基本样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('background.jpg'); /* 设置背景图片 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px; /* 标题字体大小 */
+    color: #FFD700; /* 鎏金色 */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* 为标题增加轻微阴影 */
+    font-family: "FangSong Bold", sans-serif; /* 使用仿宋加粗字体 */
+}
+
+#directory-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 设置容器的高度为视口高度，使其始终居中 */
+}
+
+#directory {
+    display: flex;
+    flex-wrap: wrap; /* 自动换行 */
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+}
+
+#directory li {
+    width: 21%; /* 缩小到70%，并调整到合适的列布局 */
+    margin: 10px 5px; /* 减少按钮之间的间隔 */
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    color: #000000; /* 修改字体颜色为黑色 */
+    text-align: center;
+    font-size: 24px; /* 按钮字体大小 */
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: "FZ ZhunYuan", sans-serif; /* 使用方正准圆字体 */
+    background-image: url('button-background.jpg'); /* 自定义按钮背景图片 */
+    background-repeat: no-repeat;
+}
+
+#directory li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3); /* 悬停时按钮增加透明度 */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+/* 新增关闭图片按钮样式 */
+.close-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.close-image:hover {
+    color: #ff0000;
+}
+
+#caption {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    font-size: 24px;
+}
